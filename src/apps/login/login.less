@@ -1,0 +1,71 @@
+.loginMain{
+  width:100%;
+  height:100%;
+  position: absolute;
+  background: url(../../common/img/bg1.png) 0 0 no-repeat;
+  background-size: cover;
+  .loginTop{
+    height:40%;
+    text-align: center;
+    // background: url(../../common/img/logo1.png) 50% 100% no-repeat;
+  }
+  .loginMiddel {
+    height:40%;
+    text-align: center;
+    .avator {
+      display:block;
+      margin: 5px auto;
+      width:100px;
+      height:100px;
+      background: url(../../common/img/landing-head.png) 50% 0 no-repeat;
+    }
+    >form{
+      // width:570px;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: baseline;
+        :global(.ant-form-item-control){
+          span{
+            width:290px;
+            display: inline-block;
+            margin-right:5px;
+            >input{
+              color: #7A7E80;
+              padding-left: 50px;
+              height:50px;
+              border: 1px solid #fff;
+            }
+            >input::placeholder{
+              color:#848484;
+            }
+            >input:hover ,>input:focus{
+              border-color: #7aa8e0
+            }
+            .username{
+               background: #E0F0FA url(../../common/img/usericon.png) -1px 0px no-repeat;
+            }
+            .password{
+               background: #E0F0FA url(../../common/img/passwordicon.png) -1px 0px no-repeat;
+            }
+          }
+        }
+        >button{
+          font-size: 16px;
+          height:49px;
+        }
+    }
+  }
+  .loginBottom {
+    text-align: center;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    bottom: 0;
+    position: absolute;
+    .company {
+      color: #004F79;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  }
+}

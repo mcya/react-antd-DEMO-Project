@@ -1,0 +1,63 @@
+.search-input {
+  display: inline-block;
+  width: 250px;
+  // margin-left: 5px;
+  padding: 10px 15px 0;
+}
+.tabPaneBox {
+  position: relative;
+  margin-top: 5px;
+}
+.tabPaneBox .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container {
+  height: 29px !important
+}
+.iconBox {
+  float: right;
+  padding: 15px 20px 0;
+  cursor: pointer;
+  color: #5992d8;
+}
+.contentBox {
+  text-align: center;
+  .img {
+    width: 160px;
+    height: 160px;
+    margin: 12px auto 10px;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  span{
+    font-size: 14px;
+    display: inline-block;
+    line-height: 22px;
+  }
+  i{
+    display: inline-block;
+    vertical-align: top;
+  }
+  i.androidIcon{
+    background: url("../../common/img/icons/android.png") no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    & ~ span {
+      line-height: 16px;
+    }
+  }
+  i.iosIcon{
+    background: url("../../common/img/icons/ios.png") no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+  }
+  //.ios {
+  //  background: url('../../common/img/ios.png') no-repeat center;
+  //}
+  //.android {
+  //  background: url('../../common/img/android.png') no-repeat center;
+  //}
+}

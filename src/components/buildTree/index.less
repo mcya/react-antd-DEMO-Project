@@ -1,0 +1,40 @@
+@chooseColor: #dee9f7;
+.moduleMain{
+  transition: box-shadow .3s;
+  &:hover{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  }
+  .titleList{
+      background-color: #5087ca;
+      color: #ffffff;
+      padding: 5px;
+      text-align: center;
+  }
+  .chooseRoom{
+    height: 180px;
+    overflow: auto;
+    border: 1px solid #eeebeb;
+    border-top: 0;
+    p{
+      border-radius: 2px;
+      cursor: pointer;
+      text-align: center;
+      margin: 6px 2px 0;
+      &:hover{
+        background-color: #eef4fb;
+      }
+      &:active{
+        background-color: @chooseColor;
+      }
+    }
+    :global(.ant-checkbox-group){
+      margin-top: 10px;
+    }
+    :global(.ant-checkbox-group label){
+      margin-left: 8px;
+    }
+    :global(.chooseOption){
+      background-color: @chooseColor !important;
+    }
+  }
+}

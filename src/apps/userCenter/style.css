@@ -1,0 +1,34 @@
+.user-content {
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+}
+.user-content .title {
+  padding: 16px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.user-content .title h3 {
+  font-size: 16px;
+  line-height: 16px;
+  border-left: 4px solid #5087c8;
+  padding-left: 7px;
+}
+.user-content .center {
+  padding: 20px;
+}
+.user-content .center .basicInfo {
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 20px;
+}
+.user-content .center .basicInfo .key {
+  text-align: right;
+}
+.user-content .center .basicInfo .headImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.user-content .center .changePsw {
+  font-size: 16px;
+  line-height: 56px;
+}

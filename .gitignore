@@ -1,0 +1,5 @@
+dist
+static
+node_modules
+.DS_Store
+src/common/img

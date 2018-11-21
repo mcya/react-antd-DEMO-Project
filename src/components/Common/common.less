@@ -1,0 +1,105 @@
+.proj-title{
+	padding-left: 20px;
+	padding-top: 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.proj-btn-save{
+	margin-left: 60px;
+}
+.proj-btn-close{
+	margin-left: 15px;
+}
+
+.dataHeader{
+	height: 38px;
+	border-bottom: 2px solid #4b87c6;
+	vertical-align: bottom;
+	label {
+		display: inline-block;
+		margin-top: 12px;
+		color: #4b87c6;
+		font-weight: bold;
+	}
+}
+.mt10{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.searchPanel{
+	background-color: #f6f6f6;
+	padding: 15px;
+	margin-bottom: 20px;
+	&-header {
+		min-height: 14px;
+	}
+	:global(.ant-form-item){
+		//margin-bottom: 0px;
+	}
+}
+
+:global(.ant-search-input-wrapper){
+	:global(.ant-search-input-white .ant-select-disabled .ant-select-selection){ //input不可用时背景色为白色
+		background-color: #fff;
+	}
+	:global(.ant-input-group-wrap){ //SearchInput 输入框不可编辑，按钮可用样式
+		:global(.ant-search-btn-iDisabled){
+			background-color: #7aa8e0 !important;
+			:global(.anticon-search:before){
+				content: "\E670";
+				color: #fff !important;
+			}
+		}
+	}
+}
+.editTabs{
+  :global(.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab){
+    border-radius: 2px 2px 0 0;
+    background: #e6e6e6;
+  }
+  :global(.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active){
+    background: #fff !important;
+  }
+  :global(.ant-tabs-nav-scroll > .ant-tabs-nav > div:nth-child(2)){
+     > div{
+      //  padding: 0 10px;
+       .anticon-close{
+         font-size: 0;
+         display: none;
+       }
+     }
+  }
+}
+
+// TagSearch样式
+.s-option-box {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+	.s-option-wrap {
+	  margin-right: 30px;
+	  overflow: auto;
+		.s-option-content {
+		  padding: 0 10px;
+		  display: inline-block;
+		  /*强制不换行，滚动条显示*/
+		  white-space: nowrap;
+			.s-option-child {
+			  margin-top: -4px !important;
+			}
+		}
+	}
+	.s-option-btn {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  height: 30px;
+	  padding: 0 8px;
+	  font-size: 14px;
+	  color: #fff;
+	  background-color: #7aa8e0;
+	  cursor: pointer;
+	}
+}

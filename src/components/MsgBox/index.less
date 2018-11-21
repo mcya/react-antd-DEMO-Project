@@ -1,0 +1,63 @@
+.MsgBox{
+
+  :global(.ant-modal-header){
+    color: #fff;
+    background-color: #5992d8;
+    padding: 9px 16px;
+  }
+
+  :global(.ant-modal-close){
+    top: 12px;
+  }
+
+  :global(.ant-modal-close-x){
+    color: #fff;
+    font-size: 18px;
+    &:hover {
+      color: #000;
+    }
+  }
+
+  .iconMixin() {
+    font-size: 24px;
+    margin-right: 16px;
+    padding: 0 1px;
+    float: left;
+  }
+
+  &-info {
+    :global(.ant-modal-body)>:global(.anticon) {
+      .iconMixin();
+      color: #5992d8;
+    }
+  }
+
+  &-success {
+    :global(.ant-modal-body)>:global(.anticon) {
+      .iconMixin();
+      color: #87d068;
+    }
+  }
+
+  &-error {
+    :global(.ant-modal-body)>:global(.anticon) {
+      .iconMixin();
+      color: #f50;
+    }
+  }
+
+  &-warning {
+    :global(.ant-modal-body)>:global(.anticon) {
+      .iconMixin();
+      color: #fa0;
+    }
+  }
+
+  &-confirm {
+    :global(.ant-modal-body)>:global(.anticon) {
+      .iconMixin();
+      color: #fa0;
+    }
+  }
+
+}

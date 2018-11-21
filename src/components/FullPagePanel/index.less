@@ -1,0 +1,70 @@
+@color:#8ADFFF;//字体颜色
+@TBackground:#154d7e;//左侧tab的背景色
+@TWidth:220px;//左侧tab的宽度
+//@THeight:calc(~"100% - 600px");//左侧tab的高度
+@THBackground:#052e5c;//左侧tab的hover的背景色
+@THHeight:40px;//左侧tab的hover的高度
+@TColor:#00bef2;//左侧tab的hover字体颜色
+@img_back_url:"../../common/img/back_hs.png";//返回图标地址
+@img_back_url_hover:"../../common/img/back1.png";//返回图标（hover）地址
+
+
+.Tabs {
+  position: fixed;
+   top:0;
+   right:0;
+   bottom: 0;
+   left:0;
+   >div:first-child{//左侧栏样式
+     color:@color;
+     float:left;
+     width:@TWidth;
+     height:100%;
+     background: @TBackground;
+     >div{
+       height: 60px;
+       line-height: 60px;
+       padding-left: 50px;
+       border-left: 5px solid @THBackground;
+       background:url(@img_back_url) 15px 21px no-repeat @THBackground;
+       &:hover {
+         background:url(@img_back_url_hover) 15px 21px no-repeat @THBackground;;
+         cursor: pointer;
+         color: @TColor;
+       }
+     }
+     > ul {
+       font-weight: bold;
+       padding-top: 25px;
+       height:100%;
+       > li {
+         height: @THHeight;
+         line-height: @THHeight;
+        //  修改字数超出，原值：padding-left: 50px;
+         padding-left: 28px;
+         border-left: 5px solid @TBackground;
+        //  文字文本超长优化
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         &:hover {
+           cursor: pointer;
+           color: @TColor;
+           background: @THBackground;
+           border-left: 5px solid #00baf3;
+         }
+       }
+     }
+   }
+  >div:nth-child(2){//右侧栏样式
+    width:100%;
+    height:100%;
+    >div.TabContent{
+      height:calc(~"100% - 0px");
+      width:calc(~"100% - @TWidth");
+      overflow:auto;
+      background:#fff;
+      padding:20px;
+    }
+  }
+}
