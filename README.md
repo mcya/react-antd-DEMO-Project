@@ -25,11 +25,16 @@ http://localhost:8989
 先执行`npm run build:dll`,之后执行`npm start`可以大大减少构建数量,
 然后将src/entris/index.html里的`<script src="./dlls/vendor.dll.js"></script>`打开。
 
-### 增加node服务器内存限制，解决构建频繁报内存溢出，运行一次即可
+#### 增加node服务器内存限制，解决构建频繁报内存溢出，运行一次即可
 先全量更新包`npm install`或者单个新增依赖包`npm install --save-dev increase-memory-limit`
 然后执行`npm run fix-memory-limit`
 
 
 
-### 变更
+#### 变更
 > apps 目录 - src/entries index.html - src/reducers - src/routes - alias.js - proxy.config.js
+> 菜单 - InitMenuTreeByUser.do - menu.json
+
+
+#### 预览
+[预览](./runImg.png)

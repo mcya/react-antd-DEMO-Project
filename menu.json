@@ -1,0 +1,31 @@
+{
+  "authid": "80",
+  "authname": "demo管理",
+  "iscommon": null,
+  "description": "demo管理",
+  "authpid": null,
+  "authtype": "1",
+  "menuurl": "/demoFile",
+  "sort": null,
+  "children": [{
+    "authid": "81",
+    "authname": "demoX",
+    "iscommon": null,
+    "description": "demoX ",
+    "authpid": "80",
+    "authtype": "1",
+    "menuurl": "/demoFile/demoXFile",
+    "sort": null,
+    "children": []
+  }, {
+    "authid": "81",
+    "authname": "demoX",
+    "iscommon": null,
+    "description": "demoX ",
+    "authpid": "80",
+    "authtype": "1",
+    "menuurl": "/demoFile/demoXFile",
+    "sort": null,
+    "children": []
+  }]
+}
