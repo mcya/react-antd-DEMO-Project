@@ -90,7 +90,7 @@ class Login extends React.Component {
                  <Button
                    htmlType="submit"
                    icon="logout"
-                   type="logo"
+                   type="primary"
                    size="large"
                    loading={this.props.result.isLogging}
                  >
