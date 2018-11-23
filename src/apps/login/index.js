@@ -37,7 +37,7 @@ class Login extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getHosts();
+    // this.props.getHosts();
     console.log("this.props.location.query", this.props.location.query);
     // if (this.props.location.query && this.props.location.query.loginOut && this.props.location.query.loginOut=="yes") {
     //   this.setState({
