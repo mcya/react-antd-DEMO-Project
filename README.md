@@ -20,6 +20,7 @@ npm3(安装完毕nodejs后升级npm3: `npm -g install npm@3`)
 
 #### 访问地址
 http://localhost:8989
+`node_modules/_dora-plugin-proxy@0.8.5@dora-plugin-proxy/lib/index.js`
 
 #### 构建提速
 先执行`npm run build:dll`,之后执行`npm start`可以大大减少构建数量,
